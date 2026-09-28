@@ -1,0 +1,13 @@
+[project]
+name = "job-apply-agent"
+version = "0.1.0"
+description = "AI agent that reads your profile and fills job application forms — dry-run first, always."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.scripts]
+job-apply-agent = "job_apply_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

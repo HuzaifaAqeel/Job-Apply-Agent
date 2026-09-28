@@ -26,6 +26,7 @@ LLM (Gemini) ──┘        │                                    │
 
 ```bash
 pip install -r requirements.txt
+pip install -e .            # installs the `job-apply-agent` console command
 playwright install chromium
 cp profile.yaml.example profile.yaml   # fill in your details
 cp .env.example .env                   # add GOOGLE_API_KEY
@@ -37,20 +38,20 @@ API keys are read from environment variables only — never hardcoded, never com
 
 ```bash
 # Always dry-run first: see the full fill plan, nothing typed
-python -m job_apply_agent.cli apply "https://jobs.example.com/apply/123" --dry-run
+job-apply-agent apply "https://jobs.example.com/apply/123" --dry-run
 
 # Actually fill the form in the browser (asks before submitting)
-python -m job_apply_agent.cli apply "https://jobs.example.com/apply/123" --live
+job-apply-agent apply "https://jobs.example.com/apply/123" --live
 
 # Fill + submit without the confirmation prompt
-python -m job_apply_agent.cli apply "https://jobs.example.com/apply/123" --live --yes
+job-apply-agent apply "https://jobs.example.com/apply/123" --live --yes
 
 # Review past runs
-python -m job_apply_agent.cli log
-python -m job_apply_agent.cli log --limit 20
+job-apply-agent log
+job-apply-agent log --limit 20
 
 # Validate your profile
-python -m job_apply_agent.cli profile check
+job-apply-agent profile check
 ```
 
 No API key? Pass `--mock-llm` to run end-to-end with template-generated text (clearly marked).
