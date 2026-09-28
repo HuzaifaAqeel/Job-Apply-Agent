@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Demo — Application for AI Engineer</title>
+<style>
+  body{font-family:system-ui,sans-serif;max-width:640px;margin:32px auto;padding:0 16px;background:#f6f7f9}
+  .card{background:#fff;border:1px solid #e2e5ea;border-radius:12px;padding:24px}
+  h1{font-size:22px;margin:0 0 4px}.sub{color:#666;margin:0 0 20px}
+  label{display:block;font-size:13px;font-weight:600;margin:14px 0 4px}
+  input,textarea,select{width:100%;padding:9px 10px;border:1px solid #cfd4dc;border-radius:8px;font-size:14px}
+  textarea{min-height:96px}
+  button{margin-top:20px;background:#0a66c2;color:#fff;border:0;border-radius:8px;padding:11px 22px;font-size:15px;cursor:pointer}
+</style></head>
+<body>
+<div class="card">
+  <h1>AI Engineer</h1>
+  <p class="sub">DemoCorp · Remote · Full-time</p>
+  <form id="apply-form">
+    <label for="fname">First name</label>
+    <input id="fname" name="first_name" type="text" required>
+    <label for="lname">Last name</label>
+    <input id="lname" name="last_name" type="text" required>
+    <label for="email">Email address</label>
+    <input id="email" name="email" type="email" required>
+    <label for="phone">Phone number</label>
+    <input id="phone" name="phone" type="tel">
+    <label for="loc">Location (city, country)</label>
+    <input id="loc" name="location" type="text">
+    <label for="linkedin">LinkedIn profile</label>
+    <input id="linkedin" name="linkedin" type="url">
+    <label for="yoe">Years of experience</label>
+    <input id="yoe" name="years_experience" type="number">
+    <label for="why">Why do you want to work at DemoCorp?</label>
+    <textarea id="why" name="why_company"></textarea>
+    <label for="cover">Cover letter</label>
+    <textarea id="cover" name="cover_letter"></textarea>
+    <button type="submit">Submit application</button>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+# Copy to profile.yaml and fill in your details.
+personal:
+  first_name: Alex
+  last_name: Khan
+  email: alex.khan@example.com
+  phone: "+1-555-010-2030"
+  location: Islamabad, Pakistan
+  linkedin: https://linkedin.com/in/alexkhan
+  github: https://github.com/alexkhan
+
+target:
+  roles:
+    - AI Engineer
+    - Backend Engineer
+  seniority: Mid
+  notice_period: "2 weeks"
+  work_authorization:
+    authorized: true
+    sponsorship_needed: false
+
+experience:
+  years_total: 4
+  current_title: AI Engineer
+  current_company: TechFlow
+  summary: >
+    AI engineer with 4 years building LLM-powered apps, RAG pipelines
+    and agentic workflows in Python.
+
+skills:
+  languages: [Python, TypeScript]
+  frameworks: [FastAPI, LangChain, React]
+  tools: [PostgreSQL, Docker, Playwright]
+
+education:
+  - degree: B.S. Computer Science
+    school: COMSATS University
+    year: 2021
+
+compensation:
+  desired_salary_usd: 90000
+
+answers:
+  why_this_company: >
+    I'm drawn to teams shipping practical AI products with a strong
+    engineering culture.
+  greatest_strength: >
+    I turn ambiguous product goals into working systems fast.
